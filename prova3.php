@@ -7,20 +7,15 @@
 </head>
 
 <body>
-
-<?php
-
-    function sumar($num1,$num2){
-
-        $suma = $num1 + $num2;
-
-        return $suma;
-
+    <?php
+    function recursividad($a)
+    {    
+        if ($a < 20) {
+            echo "$a\n";
+            recursividad($a + 1);
+        }
     }
-
-    echo sumar(1,2);
-
+    echo recursividad(3);
     ?>
-
 </body>
 </html>
